@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+
+.container h1{
+    text-align: center;
+    margin: 2rem;
+}
+
+/* swiper css */
+.swiper {
+    width: 90%;
+    height: 300px;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+  .swiper-slide img {
+    width: 110px;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-button-prev::after {
+    display: none;
+}
+
+.first-slider {
+    position: relative !important;
+}
+
+.swiper-button-next {
+    position: absolute !important;
+    top: 50% !important;
+    right: 7% !important;
+}
+.swiper-button-prev {
+    position: absolute !important;
+    top: 50% !important;
+    left: 7% !important;
+}
+.swiper-button i {
+    font-size: 2rem !important;
+}
+.swiper.swiper-initialized.swiper-horizontal.swiper-ios.swiper-backface-hidden {
+    height: fit-content;
+}
+.fa-chevron-left:before {
+    content: "\f053";
+    font-size: 2rem;
+    color: black;
+}
+.fa-chevron-right:before {
+    content: "\f053";
+    font-size: 2rem;
+    color: black;
+}
+
+
+
+@media (max-width:517px){
+    .swiper-slide img {
+        width: 60px;
+        border-radius: 50%;
+    }
+    .swiper-button-next {
+        position: absolute !important;
+        top: 50% !important;
+        right: 1% !important;
+    }
+    .swiper-button-prev {
+        position: absolute !important;
+        top: 50% !important;
+        left: 1% !important;
+    }
+    .fa-chevron-left:before {
+        font-size: 1rem;
+    }
+    .fa-chevron-right:before {
+        font-size: 1rem;
+    }
+}

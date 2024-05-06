@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Responsive Slider</h1>
+
+        <div class="first-slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/slider1-Img1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider1-img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider1-img3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider1-img4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider1-img5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/slider1-img6.jpg" alt=""></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+
+
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+
+                
+            </div>
+
+            <div class="button-div">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></i></i></div>
+                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"> </i></i></div>
+            </div>
+
+        </div>
+        <div class="second-slider">
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 10,
+
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 10
+                }
+            },
+
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
