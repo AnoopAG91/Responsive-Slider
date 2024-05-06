@@ -17,7 +17,7 @@ body{
 /* swiper css */
 .swiper {
     width: 90%;
-    height: 300px;
+    max-height: 300px;
   }
 
   .swiper-slide {
