@@ -45,12 +45,12 @@ body{
 .swiper-button-next {
     position: absolute !important;
     top: 50% !important;
-    right: 7% !important;
+    right: 6% !important;
 }
 .swiper-button-prev {
     position: absolute !important;
     top: 50% !important;
-    left: 7% !important;
+    left: 6% !important;
 }
 .swiper-button i {
     font-size: 2rem !important;
