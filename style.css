@@ -91,12 +91,12 @@ p {
 
 
 /* second slider css */
-.second-slider {
+/* .second-slider {
     position: relative;
 }
 .vp-slider .swiper-slide img {
     border: 1px solid;
-}
+} */
 
 
 
@@ -138,9 +138,9 @@ p {
         align-items: center;
         justify-content: center;
     }
-    .second-slider {
+    /* .second-slider {
         margin-top: 2rem;
-    }
+    } */
 }
 
 @media (max-width:1200px){
@@ -154,9 +154,9 @@ p {
         top: 50% !important;
         left: 2% !important;
     }
-    .second-slider {
+    /* .second-slider {
         margin-top: 2rem;
-    }
+    } */
 }
 
 
